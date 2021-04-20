@@ -53,7 +53,7 @@ class TasksController < ApplicationController
   
   # Strong Parameter セキュリティ対策
   def task_params
-	  params.require(:task).permit(:content, :status)
+    params.require(:task).permit(:content, :status)
   end
   
   def correct_user
